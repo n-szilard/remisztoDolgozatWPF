@@ -1,0 +1,43 @@
+﻿<Window x:Class="scaryDolgozatNSZ.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:scaryDolgozatNSZ"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        FontSize="20"
+        Title="Rémisztő doga" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Név" Grid.Column="0" Grid.Row="0" Margin="5"></TextBlock>
+        <TextBox x:Name="nev" Grid.Row="0" Grid.Column="1"></TextBox>
+
+        <TextBlock Text="Születési dátum" Grid.Row="1" Grid.Column="0" Margin="5"></TextBlock>
+        <TextBox x:Name="szuldatum" Grid.Row="1" Grid.Column="1"></TextBox>
+
+        <TextBlock Text="Telefonszám" Grid.Row="2" Grid.Column="0" Margin="5"></TextBlock>
+        <TextBox x:Name="telefonszam" Grid.Row="2" Grid.Column="1"></TextBox>
+
+        <TextBlock Text="E-mail cím" Grid.Row="3" Grid.Column="0" Margin="5"></TextBlock>
+        <TextBox x:Name="email" Grid.Row="3" Grid.Column="1"></TextBox>
+
+        <Button x:Name="saveBtn" Grid.Row="4" Grid.Column="1" Content="Mentés" Background="Green" Foreground="White" Click="saveBtn_Click"></Button>
+
+        <Button x:Name="colors" Grid.Row="5" Grid.Column="1" Content="Színek" Background="Blue" Foreground="White" Click="colors_Click"></Button>
+
+        <Button x:Name="exit" Grid.Row="5" Grid.Column="0" Content="Kilépés" Background="Red" Foreground="White" Click="exit_Click"></Button>
+    </Grid>
+</Window>
